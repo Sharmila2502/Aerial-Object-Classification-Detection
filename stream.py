@@ -11,12 +11,12 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 
-with open(r"custom_model (1)-Copy1.pt", 'r') as f:
+with open(r"class_labels.txt", 'r') as f:
     class_labels = [line.strip() for line in f.readlines()]
 def preprocess(image):
     # Custom preprocessing logic
     return image.resize((640, 640))
-with open(r"custom_model (1).pkl", 'rb') as file:
+with open(r"custom_model (1)-Copy1.pt", 'rb') as file:
     Ymodel = pickle.load(file)
     
 
