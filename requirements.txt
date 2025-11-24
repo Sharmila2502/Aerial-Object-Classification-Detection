@@ -1,5 +1,6 @@
-import pickle
-import joblib
-import streamlit as st
-import numpy as np
-import torchvision.transforms as transforms
+streamlit
+numpy
+torch
+torchvision
+joblib
+pillow
