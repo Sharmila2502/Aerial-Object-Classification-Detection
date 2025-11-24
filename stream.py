@@ -3,7 +3,7 @@ import joblib
 # Load your pre-trained model
 # model = joblib.load(r"Desktop/proj 5/Res50model.model")
 model_path = os.path.join("models", "mobilenet.model") 
-    with open(model_path, 'rb') as file:
+with open(model_path, 'rb') as file:
         model = pickle.load(file)
 
 
