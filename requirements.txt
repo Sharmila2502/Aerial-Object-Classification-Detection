@@ -1,3 +1,4 @@
+ultralytic
 streamlit
 numpy
 torch
