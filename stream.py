@@ -1,6 +1,7 @@
 import pickle
 import joblib
 import os
+from ultralytics import YOLO
 # Load your pre-trained model
 model = joblib.load("mobilenet.model")
 
