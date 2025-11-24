@@ -15,7 +15,7 @@ with open(r"class_labels.txt", 'r') as f:
 def preprocess(image):
     # Custom preprocessing logic
     return image.resize((640, 640))
-Ymodel = pickle.load(file)
+Ymodel = pickle.load("custom_model (1).pkl")
     
 # Load your pre-trained model
 model = joblib.load(r"Desktop/proj 5/Res50model.model")
