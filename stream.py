@@ -1,9 +1,11 @@
 import pickle
 import joblib
 import os
+import torch
 
 # Load your pre-trained model
 model = joblib.load("mobilenet.model")
+model.eval()
 
 
 
@@ -17,7 +19,8 @@ def preprocess(image):
     # Custom preprocessing logic
     return image.resize((640, 640))
 with open(r"custom_model (1)-Copy1.pt", 'rb') as file:
-    Ymodel = pickle.load(file)
+    Ymodel = torch.load(file)
+Ymodel.eval()
     
 
 import torchvision.transforms as transforms
