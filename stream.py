@@ -15,10 +15,9 @@ with open(r"class_labels.txt", 'r') as f:
 def preprocess(image):
     # Custom preprocessing logic
     return image.resize((640, 640))
-Ymodel = pickle.load("custom_model (1).pkl")
+with open(r"custom_model (1).pkl", 'rb') as file:
+    Ymodel = pickle.load(file)
     
-# Load your pre-trained model
-model = joblib.load(r"Desktop/proj 5/Res50model.model")
 
 import torchvision.transforms as transforms
 preprocess = transforms.Compose([
