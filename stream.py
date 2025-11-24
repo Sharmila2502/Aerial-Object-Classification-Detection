@@ -1,4 +1,4 @@
-pip install ultralytics
+!pip install ultralytics
 import pickle
 import joblib
 import os
