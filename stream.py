@@ -2,23 +2,20 @@ import pickle
 import joblib
 import os
 # Load your pre-trained model
-# model = joblib.load(r"Desktop/proj 5/Res50model.model")
-model_path = os.path.join("models", "mobilenet.model") 
-with open(model_path, 'rb') as file:
-        model = pickle.load(file)
+model = joblib.load("mobilenet.model")
+
 
 
 import streamlit as st
 from PIL import Image
 import numpy as np
 
-with open(r"Desktop/proj 5/class_labels.txt", 'r') as f:
+with open(r"class_labels.txt", 'r') as f:
     class_labels = [line.strip() for line in f.readlines()]
 def preprocess(image):
     # Custom preprocessing logic
     return image.resize((640, 640))
-with open(r"Desktop/proj 5/custom_model (1).pkl", 'rb') as file:
-    Ymodel = pickle.load(file)
+Ymodel = pickle.load(file)
     
 # Load your pre-trained model
 model = joblib.load(r"Desktop/proj 5/Res50model.model")
