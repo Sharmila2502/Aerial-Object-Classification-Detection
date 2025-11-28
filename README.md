@@ -1,7 +1,6 @@
 🛰️ Aerial Object Classification & Detection
 
-A Deep Learning System for Classifying Birds vs. Drones
-(With Optional YOLOv8 Object Detection)
+A Deep Learning System for Classifying Birds vs. Drones With YOLOv8 Object Detection)
 
 ✅ Project Status: Completed Successfully
 
